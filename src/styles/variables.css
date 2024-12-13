@@ -1,0 +1,17 @@
+/* variables */
+:root {
+    /* Colors */
+    --primary-color: #5547FF;
+    --secondary-color: #000000;
+    --tertiary-color: #FFFFFF;
+
+  
+    /* Fonts */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Bricolage Grotesque', sans-serif;
+  
+    /* Sizes */
+    --font-size-base: 16px;
+    --spacing-base: 8px;
+  }
+  
