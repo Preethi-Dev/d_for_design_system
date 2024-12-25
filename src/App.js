@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import Header from "./sections/Header";
+import CommunityIntro, { CommunityMemberIntro } from "./sections/Intro";
+import JoinUs from "./sections/JoinUs/JoinUs";
+import HowItHelps from "./sections/HowItHelps/HowItHelps";
 
-const Title = styled.div`
-  font-size: 1.5em;
-  font-family: var(--font-secondary);
-  text-align: center;
-  color: #BF4F74;
-`
+const Container = styled.div`
+  background-color: var(--secondary-color);
+`;
 
 function App() {
   return (
-    <Title>Your partner for an epic design system journey</Title>
+    <Container>
+      <Header />
+      <CommunityIntro />
+      <CommunityMemberIntro />
+      <JoinUs />
+      <HowItHelps />
+    </Container>
   );
 }
 

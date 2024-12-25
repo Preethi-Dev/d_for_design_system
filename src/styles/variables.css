@@ -1,17 +1,20 @@
 /* variables */
 :root {
-    /* Colors */
-    --primary-color: #5547FF;
-    --secondary-color: #000000;
-    --tertiary-color: #FFFFFF;
+  /* Colors */
+  --primary-color: #5547ff;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --primary-bg: #f9faf9;
 
-  
-    /* Fonts */
-    --font-primary: 'Inter', sans-serif;
-    --font-secondary: 'Bricolage Grotesque', sans-serif;
-  
-    /* Sizes */
-    --font-size-base: 16px;
-    --spacing-base: 8px;
-  }
-  
+  --fun-tone-blue: #aeeaf8;
+  --fun-tone-red: #f4b1af;
+  --fun-tone-yellow: #fbe385;
+
+  /* Fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Bricolage Grotesque", sans-serif;
+
+  /* Sizes */
+  --font-size-base: 16px;
+  --spacing-base: 8px;
+}
