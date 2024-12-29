@@ -14,6 +14,7 @@ const Container = styled.div`
   background-color: var(--primary-bg);
   padding: 0 1rem;
   align-itms: start;
+  overflow: hidden;
 `;
 
 const CardContainer = styled.div`
@@ -21,6 +22,7 @@ const CardContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-bottom: 10rem;
 `;
 
 const HowItHelps = () => {

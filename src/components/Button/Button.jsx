@@ -8,18 +8,28 @@ const Container = styled.button`
   align-items: center;
   gap: 0.75rem;
 
-  color: var(--tertiary-color);
+  color: ${(props) =>
+    props.$theme === "light"
+      ? "var(--secondary-color)"
+      : "var(--tertiary-color)"};
   font-size: 1rem;
   font-weight: 600;
 
   border-radius: 4rem;
-  background-color: var(--secondary-color);
+  background-color: ${(props) =>
+    props.$theme === "light"
+      ? "var(--tertiary-color)"
+      : "var(--secondary-color)"};
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
-const Button = ({ label, icon }) => {
+const Button = ({ label, icon, theme = "dark" }) => {
   return (
-    <Container>
+    <Container $theme={theme}>
       {label}
       <img src={icon} alt="" />
     </Container>
