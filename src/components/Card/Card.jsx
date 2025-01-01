@@ -37,6 +37,7 @@ const CardImage = styled.img`
   width: 22rem;
   height: 22rem;
   border-radius: 1rem;
+  object-fit: cover;
 
   @media (max-width: 1200px) {
     width: 18rem;

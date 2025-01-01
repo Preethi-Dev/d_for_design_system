@@ -6,7 +6,8 @@ import Card from "../../components/Card";
 
 //assets
 import Keerthi from "../../assets/images/keerthi.png";
-import Preethi from "../../assets/images/Preethi.jpeg";
+import Preethi from "../../assets/images/preethi.png";
+import ShivaGanesh from "../../assets/images/shivaganesh.png";
 
 const Container = styled.div`
   background-color: var(--primary-bg);
@@ -29,19 +30,19 @@ export const CommunityMemberIntro = () => {
       <Card
         image={Keerthi}
         name="Keerthi"
-        description="Product Designer"
+        description="Founder"
         rope={"Rope01"}
       />
       <Card
         image={Preethi}
         name="Preethi"
-        description="Frontend Engineer"
+        description="Founding Member"
         rope={"Rope02"}
       />
       <Card
-        image={Keerthi}
+        image={ShivaGanesh}
         name="Shiva Ganesh"
-        description="Visual Designer"
+        description="Founding Member"
         rope={"Rope03"}
       />
     </Container>

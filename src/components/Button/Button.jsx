@@ -27,12 +27,14 @@ const Container = styled.button`
   }
 `;
 
-const Button = ({ label, icon, theme = "dark" }) => {
+const Button = ({ label, icon, theme = "dark", link }) => {
   return (
-    <Container $theme={theme}>
-      {label}
-      <img src={icon} alt="" />
-    </Container>
+    <a href={link}>
+      <Container $theme={theme}>
+        {label}
+        <img src={icon} alt="" />
+      </Container>
+    </a>
   );
 };
 

@@ -21,7 +21,7 @@ const CardContainer = styled.div`
 
 const JoinUs = () => {
   return (
-    <Container>
+    <Container id="joinus">
       <Title>Why join us!</Title>
       <CardContainer>
         <ReasonCard

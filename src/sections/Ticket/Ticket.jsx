@@ -33,7 +33,7 @@ const Ticket = () => {
   const isMobileBreakpoint = width <= 450;
 
   return (
-    <Container>
+    <Container id="events">
       <TicketImage
         src={isMobileBreakpoint ? MobileEventTicket : EventTicket}
         alt="D for design system's first event going to happen in bangalore"

@@ -51,7 +51,7 @@ const CollapseWrapper = styled.div`
 
 const FAQ = () => {
   return (
-    <Container>
+    <Container id="faq">
       <Title>FAQ</Title>
       <CollapseWrapper>
         <Collapse items={items} defaultKey={2} />

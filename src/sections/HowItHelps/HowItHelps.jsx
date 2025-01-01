@@ -27,7 +27,7 @@ const CardContainer = styled.div`
 
 const HowItHelps = () => {
   return (
-    <Container>
+    <Container id="howithelps">
       <Title>How it helps?</Title>
       <CardContainer>
         <ColorCard

@@ -8,12 +8,14 @@ import HowItHelps from "./sections/HowItHelps";
 import Ticket from "./sections/Ticket";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
+import useLenis from "./hooks/useLenis";
 
 const Container = styled.div`
   background-color: var(--secondary-color);
 `;
 
 function App() {
+  useLenis();
   return (
     <Container>
       <Header />

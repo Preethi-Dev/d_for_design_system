@@ -28,7 +28,7 @@ const IntroText = styled.h2`
 
 const CommunityIntro = () => {
   return (
-    <IntroText>
+    <IntroText id="about">
       India’s first ever design community dedicated to design system.
     </IntroText>
   );

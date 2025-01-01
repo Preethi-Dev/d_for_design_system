@@ -76,13 +76,17 @@ const Navbar = () => {
         <Logo />
         <Seperator></Seperator>
         <NavItemContainer>
-          <NavItem>Events</NavItem>
-          <NavItem>About</NavItem>
-          <NavItem>Why Join?</NavItem>
-          <NavItem>FAQ</NavItem>
+          <NavItem href="#events">Events</NavItem>
+          <NavItem href="#about">About</NavItem>
+          <NavItem href="#joinus">Why Join?</NavItem>
+          <NavItem href="#faq">FAQ</NavItem>
         </NavItemContainer>
       </NavWrapper>
-      <Button label={"Connect us"} icon={BrandShape} />
+      <Button
+        label={"Connect us"}
+        icon={BrandShape}
+        link={"https://www.linkedin.com/company/d-for-design-system/about/"}
+      />
     </Container>
   ) : (
     <MobileWrapper>
