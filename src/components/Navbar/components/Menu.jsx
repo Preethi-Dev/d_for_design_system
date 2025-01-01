@@ -79,7 +79,11 @@ const Menu = () => {
             <NavItem href="#faq">FAQ</NavItem>
           </NavItemContainer>
 
-          <Button label={"Connect us"} icon={BrandShape} />
+          <Button
+            label={"Connect us"}
+            icon={BrandShape}
+            link={"https://www.linkedin.com/company/d-for-design-system/about/"}
+          />
         </NavContainer>
       )}
     </>
