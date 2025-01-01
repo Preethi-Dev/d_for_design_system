@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const LinkWrapper = styled.a`
+  text-decoraion: none;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
 const Container = styled.button`
   display: inline-flex;
   padding: 1.25rem 2.5rem;
@@ -29,12 +36,12 @@ const Container = styled.button`
 
 const Button = ({ label, icon, theme = "dark", link }) => {
   return (
-    <a href={link}>
+    <LinkWrapper href={link}>
       <Container $theme={theme}>
         {label}
         <img src={icon} alt="" />
       </Container>
-    </a>
+    </LinkWrapper>
   );
 };
 

@@ -25,7 +25,7 @@ const Container = styled.div`
 const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2.5rem;
   position: absolute;
   top: 5.5rem;
   right: 1.5rem;
@@ -33,6 +33,11 @@ const NavContainer = styled.div`
   background-color: var(--primary-bg);
   border-radius: 1rem;
   padding: 2.5rem;
+`;
+
+const NavItemContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const NavItem = styled.a`
@@ -65,10 +70,13 @@ const Menu = () => {
       </Container>
       {isOpen && (
         <NavContainer $width={width - 48} onClick={handleMenuClick}>
-          <NavItem href="#events">Events</NavItem>
-          <NavItem href="#about">About</NavItem>
-          <NavItem href="#joinus">Why Join?</NavItem>
-          <NavItem href="#faq">FAQ</NavItem>
+          <NavItemContainer>
+            <NavItem href="#events">Events</NavItem>
+            <NavItem href="#about">About</NavItem>
+            <NavItem href="#joinus">Why Join?</NavItem>
+            <NavItem href="#faq">FAQ</NavItem>
+          </NavItemContainer>
+
           <Button label={"Connect us"} icon={BrandShape} />
         </NavContainer>
       )}
