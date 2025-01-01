@@ -25,10 +25,12 @@ const Container = styled.div`
 const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  justify-content: space-between;
   position: absolute;
   top: 5.5rem;
   right: 1.5rem;
+  height: 80vh;
+  z-index: 99;
   width: ${(props) => props.$width}px;
   background-color: var(--primary-bg);
   border-radius: 1rem;
